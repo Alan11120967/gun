@@ -147,6 +147,38 @@
         color: white;
         font-family: inherit;
     }
+<!DOCTYPE html>
+<html>
+<head>
+    <title>我的游戏</title>
+</head>
+<body>
+    <canvas id="gameCanvas"></canvas>
+
+    <!-- 第一个 script：放你的核心游戏代码 -->
+    <script>
+        // 这里是你原来的游戏逻辑
+        const canvas = document.getElementById('gameCanvas');
+        console.log("游戏核心代码加载完毕");
+        
+        function startGame() {
+            // ...
+        }
+    </script>
+
+    <!-- 第二个 script：放你想“上锁”或混淆后的代码 -->
+    <script>
+        // 这里可以放刚才那段混淆后的乱码代码
+        // 或者放一些不想让别人一眼看到的配置
+        const _0x5a2b = ... // 混淆代码
+        
+        // 因为是在下面加载，它依然可以访问上面的变量（如 canvas）
+    </script>
+
+    <!-- 第三个 script：甚至可以放第三方的统计代码 -->
+    <script src="统计代码.js"></script>
+</body>
+</html>
 </style>
 </head>
 <body>
